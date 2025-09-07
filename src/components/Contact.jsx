@@ -23,7 +23,7 @@ const Contact = () => {
 
         <p className="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
           Whether you have a project idea or just want to say hi, I’d love to
-          hear from you. Fill out the form below or reach me on socials 🚀
+          hear from you. Fill out the form below or reach me on socials
         </p>
 
         {/* Contact Form + Socials */}

@@ -88,10 +88,11 @@ const Hero = ({
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
               </Button>
             </a>
-
-            <Button className="h-11 rounded-2xl border border-white/15 bg-white/5 px-6 text-base font-medium text-white/90 backdrop-blur transition hover:bg-white/10">
-              Contact Me
-            </Button>
+            <a href="#contact">
+              <Button className="h-11 rounded-2xl border border-white/15 bg-white/5 px-6 text-base font-medium text-white/90 backdrop-blur transition hover:bg-white/10">
+                Contact Me
+              </Button>
+            </a>
           </motion.div>
 
           {/* Social Links */}
@@ -104,13 +105,16 @@ const Hero = ({
             <IconLink href="https://yourwebsite.com" label="Website">
               <Globe className="h-5 w-5" />
             </IconLink>
-            <IconLink href="https://github.com/" label="GitHub">
+            <IconLink href="https://github.com/malikcs0310" label="GitHub">
               <Github className="h-5 w-5" />
             </IconLink>
             <IconLink href="https://linkedin.com/in/" label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </IconLink>
-            <IconLink href="mailto:hello@example.com" label="Email">
+            <IconLink
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=malikcs0310@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Usama,%20I%20saw%20your%20portfolio."
+              label="Email"
+            >
               <Mail className="h-5 w-5" />
             </IconLink>
           </motion.div>
