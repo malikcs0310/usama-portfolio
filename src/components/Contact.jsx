@@ -9,17 +9,17 @@ const sendEmail = (e) => {
 
   emailjs
     .sendForm(
-      "service_uge97at",
-      "template_6r4pc9m",
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       e.target,
-      "vqOyVFFD2yOox__BO"
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     )
     .then(
       (result) => {
-        alert("Message sent successfully 🚀");
+        alert("Message sent successfully");
       },
       (error) => {
-        alert("Failed to send message ❌");
+        alert("Failed to send message");
       }
     );
 };
