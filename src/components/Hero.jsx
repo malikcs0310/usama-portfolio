@@ -15,9 +15,6 @@ const Hero = ({
   name = "Malik Usama",
   role = "Full-Stack Web Developer • Lahore, Pakistan",
   summary = "Previously worked with PHP & MySQL, now focused on building modern and scalable applications with the MERN Stack (MongoDB, Express, React, Node.js).",
-  location = "Lahore, Pakistan",
-  onPrimaryClick = () => {},
-  onSecondaryClick = () => {},
 }) => {
   return (
     <section

@@ -2,6 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Globe } from "lucide-react";
 
+import emailjs from "emailjs-com";
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_uge97at",
+      "template_6r4pc9m",
+      e.target,
+      "vqOyVFFD2yOox__BO"
+    )
+    .then(
+      (result) => {
+        alert("Message sent successfully 🚀");
+      },
+      (error) => {
+        alert("Failed to send message ❌");
+      }
+    );
+};
+
 const Contact = () => {
   return (
     <section
@@ -35,15 +57,13 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
             className="space-y-5 rounded-2xl bg-white shadow-xl p-8"
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Message sent! 🚀");
-            }}
+            onSubmit={sendEmail}
           >
             <div>
               <label className="block text-sm font-medium mb-1">Name</label>
               <input
                 type="text"
+                name="name"
                 required
                 className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 outline-none transition"
               />
@@ -52,6 +72,7 @@ const Contact = () => {
               <label className="block text-sm font-medium mb-1">Email</label>
               <input
                 type="email"
+                name="email"
                 required
                 className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 outline-none transition"
               />
@@ -61,6 +82,7 @@ const Contact = () => {
               <textarea
                 rows={4}
                 required
+                name="message"
                 className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 outline-none transition"
               />
             </div>
@@ -83,19 +105,19 @@ const Contact = () => {
             <p className="text-lg font-semibold">Or connect with me here:</p>
             <div className="grid grid-cols-2 gap-5 sm:grid-cols-2">
               <SocialCard
-                href="https://github.com/"
+                href="https://github.com/malikcs0310"
                 label="GitHub"
                 icon={<Github className="h-7 w-7" />}
                 gradient="from-gray-800 to-gray-600"
               />
               <SocialCard
-                href="https://linkedin.com/in/"
+                href="https://www.linkedin.com/in/malik-usama-9b7a10220/"
                 label="LinkedIn"
                 icon={<Linkedin className="h-7 w-7" />}
                 gradient="from-blue-600 to-blue-500"
               />
               <SocialCard
-                href="mailto:hello@example.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=malikcs0310@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Usama,%0A%0AI%20visited%20your%20portfolio%20and%20I%20am%20interested%20in%20your%20skills%20and%20projects.%20Can%20we%20connect%20to%20discuss%20further?"
                 label="Email"
                 icon={<Mail className="h-7 w-7" />}
                 gradient="from-red-500 to-pink-500"

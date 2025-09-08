@@ -13,20 +13,20 @@ const navLinks = [
 const socials = [
   {
     name: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/malikcs0310",
     icon: <Github className="h-5 w-5" />,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/",
+    href: "https://www.linkedin.com/in/malik-usama-9b7a10220/",
     icon: <Linkedin className="h-5 w-5" />,
   },
   {
     name: "Email",
-    href: "mailto:hello@example.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=malikcs0310@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Usama,%0A%0AI%20visited%20your%20portfolio%20and%20I%20am%20interested%20in%20your%20skills%20and%20projects.%20Can%20we%20connect%20to%20discuss%20further?",
     icon: <Mail className="h-5 w-5" />,
   },
-  { name: "Portfolio", href: "#", icon: <Globe className="h-5 w-5" /> },
+  // { name: "Portfolio", href: "#", icon: <Globe className="h-5 w-5" /> },
 ];
 
 export default function Footer() {
