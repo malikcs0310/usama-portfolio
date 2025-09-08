@@ -5,33 +5,34 @@ import { Briefcase, GraduationCap } from "lucide-react";
 const experiences = [
   {
     title: "Full Stack Web Developer",
-    company: "Freelance / Remote",
+    company: "Freelance / Academic Projects",
     period: "2022 - Present",
     description:
-      "Developing full-stack web apps with React, Node.js, MongoDB, PHP & MySQL. Focused on creating modern, responsive and scalable web solutions.",
+      "Built and deployed multiple web projects during university and through freelance work. Experienced in creating responsive, scalable, and modern applications using React, Node.js, Express, MongoDB, PHP, and MySQL.",
   },
   {
-    title: "Frontend Developer (Internship)",
-    company: "Tech Company",
-    period: "2021 - 2022",
+    title: "Self-Directed Projects & Learning",
+    company: "Personal / Freelance Work",
+    period: "2021 - Present",
     description:
-      "Worked on building UI with React, Tailwind CSS and integrated APIs. Learned best practices of teamwork and agile development.",
+      "Gained hands-on experience by building real-world projects including an E-commerce platform, School Management System, and Personal Portfolio. Skilled in React, Tailwind CSS, Node.js, Express, PHP, and MySQL.",
   },
 ];
 
 const education = [
   {
-    degree: "BS Computer Science",
-    institution: "University of Lahore",
-    period: "2018 - 2022",
+    degree: "ADP in Computer Science",
+    institution: "Superior University, Lahore",
+    period: "2023 - 2025",
     description:
-      "Specialized in web development, databases and modern programming languages.",
+      "Completed an Associate Degree Program (ADP) in Computer Science, building strong expertise in web development, databases, and modern programming languages. Planning to pursue BS Computer Science next.",
   },
   {
-    degree: "Intermediate (Pre-Engineering)",
-    institution: "Govt. College Lahore",
-    period: "2016 - 2018",
-    description: "Focused on Mathematics, Physics and Computer Science.",
+    degree: "Intermediate in Computer Science (ICS)",
+    institution: "Aspire Group of Colleges, Lahore",
+    period: "2018 - 2020",
+    description:
+      "Studied Computer Science, Mathematics, and Physics with a strong foundation in programming and problem-solving.",
   },
 ];
 

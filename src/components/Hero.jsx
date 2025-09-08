@@ -102,17 +102,20 @@ const Hero = ({
             transition={{ duration: 0.7, delay: 0.42 }}
             className="mt-6 flex items-center justify-center gap-3 md:justify-start"
           >
-            <IconLink href="https://yourwebsite.com" label="Website">
+            {/* <IconLink href="https://yourwebsite.com" label="Website">
               <Globe className="h-5 w-5" />
-            </IconLink>
+            </IconLink> */}
             <IconLink href="https://github.com/malikcs0310" label="GitHub">
               <Github className="h-5 w-5" />
             </IconLink>
-            <IconLink href="https://linkedin.com/in/" label="LinkedIn">
+            <IconLink
+              href="https://www.linkedin.com/in/malik-usama-9b7a10220/"
+              label="LinkedIn"
+            >
               <Linkedin className="h-5 w-5" />
             </IconLink>
             <IconLink
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=malikcs0310@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Usama,%20I%20saw%20your%20portfolio."
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=malikcs0310@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Usama,%0A%0AI%20visited%20your%20portfolio%20and%20I%20am%20interested%20in%20your%20skills%20and%20projects.%20Can%20we%20connect%20to%20discuss%20further?"
               label="Email"
             >
               <Mail className="h-5 w-5" />

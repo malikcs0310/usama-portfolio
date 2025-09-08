@@ -1,27 +1,42 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { Github } from "lucide-react";
+import portfolio from "../assets/portfolio.png";
+import orderhive from "../assets/OrderHive.png";
+import ilmbase from "../assets/ilmbase.png";
 const projects = [
+  // {
+  //   title: "E-Commerce Website",
+  //   description:
+  //     "A modern e-commerce platform with shopping cart, payment gateway, and admin dashboard.",
+  //   image: "/images/project1.jpg",
+  //   live: "https://github.com/malikcs0310?tab=repositories", // Live demo link
+  //   github: "https://github.com/malikcs0310?tab=repositories", // GitHub repo link
+  // },
   {
-    title: "E-Commerce Website",
+    title: "OrderHive",
     description:
-      "A modern e-commerce platform with shopping cart, payment gateway, and admin dashboard.",
-    image: "/images/project1.jpg",
-    link: "#",
+      "An e-commerce platform with product management, cart, checkout and payment system.",
+    image: orderhive,
+    live: "https://github.com/malikcs0310?tab=repositories", // agar live link hai to yahan daalo
+    github: "https://github.com/malikcs0310?tab=repositories",
   },
+
   {
-    title: "School Management System",
+    title: "ilmBase-School Management System",
     description:
       "Full-stack web app for managing students, classes, and exams with clean UI.",
-    image: "/images/project2.jpg",
-    link: "#",
+    image: ilmbase,
+    live: "https://github.com/malikcs0310?tab=repositories",
+    github: "https://github.com/malikcs0310?tab=repositories",
   },
   {
     title: "Portfolio Website",
     description:
       "A personal portfolio showcasing projects, skills, and achievements with animations.",
-    image: "/images/project3.jpg",
-    link: "#",
+    image: portfolio,
+    live: "https://github.com/malikcs0310?tab=repositories",
+    github: "https://github.com/malikcs0310?tab=repositories",
   },
 ];
 
@@ -73,12 +88,27 @@ const Projects = () => {
                 <p className="mt-3 text-gray-600 text-sm leading-relaxed">
                   {project.description}
                 </p>
-                <a
-                  href={project.link}
-                  className="mt-5 inline-block text-sm font-medium text-cyan-600 hover:text-violet-600 transition"
-                >
-                  View Project →
-                </a>
+
+                {/* Buttons */}
+                <div className="mt-5 flex items-center gap-4">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block text-sm font-medium text-cyan-600 hover:text-violet-600 transition"
+                  >
+                    View Project →
+                  </a>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-center h-9 w-9 rounded-full bg-gray-100 hover:bg-cyan-500 hover:text-white text-gray-700 shadow-sm transition"
+                  >
+                    <Github className="h-5 w-5" />
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
