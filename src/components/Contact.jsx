@@ -16,10 +16,10 @@ const sendEmail = (e) => {
     )
     .then(
       (result) => {
-        alert("Message sent successfully");
+        alert("Message sent successfully 🚀");
       },
       (error) => {
-        alert("Failed to send message");
+        alert("Failed to send message ❌");
       }
     );
 };

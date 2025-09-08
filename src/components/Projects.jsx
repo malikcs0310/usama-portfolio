@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import portfolio from "../assets/portfolio.png";
 import orderhive from "../assets/OrderHive.png";
-import ilmbase from "../assets/ilmbase.png";
+import ilmbase from "../assets/ilmBase.png";
 const projects = [
   // {
   //   title: "E-Commerce Website",
