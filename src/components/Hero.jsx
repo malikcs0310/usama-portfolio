@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
-import hero from "../assets/usama2.jpg";
+import usama from "../assets/Usama2.jpg";
 
 const Hero = ({
   name = "Malik Usama",
@@ -131,7 +131,7 @@ const Hero = ({
             <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-cyan-400/30 via-sky-400/20 to-violet-400/30 blur-2xl" />
             <div className="relative h-40 w-40 sm:h-56 sm:w-56 overflow-hidden rounded-full border border-white/15 bg-gradient-to-br from-neutral-900 to-neutral-800 shadow-2xl">
               <img
-                src={hero}
+                src={usama}
                 alt="Malik Usama"
                 className="h-full w-full object-cover"
               />
