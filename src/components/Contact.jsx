@@ -9,10 +9,10 @@ const sendEmail = (e) => {
 
   emailjs
     .sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      "service_uge97at",
+      "template_6r4pc9m",
       e.target,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      "vqOyVFFD2yOox__BO"
     )
     .then(
       (result) => {
