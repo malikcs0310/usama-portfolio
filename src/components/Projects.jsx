@@ -35,7 +35,7 @@ const projects = [
     description:
       "A personal portfolio showcasing projects, skills, and achievements with animations.",
     image: portfolio,
-    live: "https://github.com/malikcs0310?tab=repositories",
+    live: "https://usama-portfolio-one.vercel.app/",
     github: "https://github.com/malikcs0310?tab=repositories",
   },
 ];
